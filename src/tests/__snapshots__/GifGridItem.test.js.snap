@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test of GifGridItem should be show the component 1`] = `
+<div
+  className="card animate__animated animate__backInLeft"
+  key="1"
+>
+  <img
+    alt="Prueba"
+    height="300"
+    src="google.com"
+    width="300"
+  />
+</div>
+`;

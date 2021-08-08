@@ -1,11 +1,18 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 const GifGridItem = ( {title, id,url} ) => {
     return (
-        <div className="card animate__animated animate__backInLeft">
-            <img src={url} alt={title} key={id} height="300" width="300" />
+        <div className="card animate__animated animate__backInLeft" key={id}>
+            <img src={url} alt={title} height="300" width="300" />
         </div>
     )
 }
-//                 <img src={imageGif.url} alt={imageGif.title} key={imageGif.id} height="300" width="300" />
+
+GifGridItem.propTypes = {
+    title: Proptypes.string.isRequired,
+    id: Proptypes.number.isRequired,
+    url: Proptypes.string.isRequired
+}
 export default GifGridItem
+

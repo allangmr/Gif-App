@@ -2,14 +2,10 @@ import { useState } from 'react'
 import AddCategory from './AddCategory';
 import GifGrid from './GifGrid';
 
-const GifApp = props => {
+const GifApp = ({defaultCategories = []}) => {
 
-    const [categories, setCategories] = useState(['developer']);
+    const [categories, setCategories] = useState(defaultCategories);
 
-    // const handleAdd = () =>{
-    //     setCategories([...categories, 'XMEN'])
-    //     setCategories(cats => [...categories, 'XMEN'])
-    // }
     return (
         <div>
             <h2>GifApp</h2>
